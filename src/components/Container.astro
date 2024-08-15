@@ -1,0 +1,27 @@
+---
+
+import '../styles/global.css'
+
+---
+
+<div class:list={['flossy-gradient']}>
+    <h2>What's in this container?</h2>
+    <p>A lot of stuff.</p>
+</div>
+
+<style>
+.flossy-gradient {
+    padding: 2vb;
+    margin-inline: 1vb;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(
+        to right bottom,
+        hsl(200deg, 100%, 10%),
+        hsl(200deg, 40%, 90%)
+    );
+};
+/*
+hsl(200deg, 100, 10)
+hsl(200deg, 40, 90)
+*/
+</style>
