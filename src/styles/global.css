@@ -6,30 +6,70 @@ html {
     
 }
 
+body {
+    width: 96vw;
+    justify-content: center;
+    align-items: center;
+	margin-left:auto;
+    margin-right:auto;
+    background: #103541;
+    line-height: 1.16;
+    position: absolute;
+    display: block;
+}
+
+section {
+    display: block;
+    position: relative;
+}
+
+div {
+    display: block;
+    position: relative;
+}
+
+div.centered {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    block-size: 80%;
+    position:fixed;
+
+}
+
 h1 {
     font-size: clamp(2rem, 10vw, 3rem);
     width: 86vw;
 }
 
-
-body {
-    width: 96vb;
-    padding-inline-start: 2rem;
-    margin-inline: 2rem;
-	margin-block: 1rem;
-    background: #103541;
-    line-height: 1.16;
+h1[class="center"] {
+    text-align: center;
 }
 
+
+
+
 ul {
-	margin: 1rem 0;
-	padding: 0;
+	margin: 0rem;
+	padding: 1rem, 0;
 }
 
 li {
-	padding-inline-start: 0.7ch;
-	margin-inline-start: -0.7ch;
+	padding-inline-start: 1rem;
+	margin-inline-start: .2rem;
 }
+li::marker {
+    content: '*';
+    font-size: .76em;
+  }
+
+.view {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+    
 
 .horizontal {
     writing-mode: horizontal-tb;
@@ -40,6 +80,26 @@ li {
     writing-mode: vertical-lr;
     height: 96vi; /* Same as 10vh */
 }
+
+
+@keyframes appear { 
+    from {
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+    
+}
+
+.animate-this {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
 
 
 

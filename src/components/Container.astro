@@ -3,23 +3,44 @@
 import '../styles/global.css'
 
 ---
-
-<div class:list={['flossy-gradient']}>
-    <h2>What's in this container?</h2>
-    <p>A lot of stuff.</p>
-</div>
+<section>
+    <div class="flossy-gradient">
+        <div class="content">
+            <h2>What's in this container?</h2>
+            <p>A lot of stuff.</p>
+            <ul>
+                <li>Man</li>
+                <li>Woman</li>
+                <li>Private Equity</li>
+                <li>Venture Capital</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 <style>
 .flossy-gradient {
-    padding: 2vb;
-    margin-inline: 1vb;
+    margin: auto;
+    padding: 1% 2rem 4% 2rem;
+    vertical-align: middle;
     border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 80%;
     background-image: linear-gradient(
         to right bottom,
         hsl(200deg, 100%, 10%),
         hsl(200deg, 40%, 90%)
     );
 };
+
+div .content{
+    vertical-align: bottom;
+    box-sizing: border-box;
+    padding-block: 10%;
+    position: relative;
+}
+
+
 /*
 hsl(200deg, 100, 10)
 hsl(200deg, 40, 90)
