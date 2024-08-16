@@ -7,13 +7,12 @@ html {
 }
 
 body {
-    width: 96%;
+    width: 96%; 
     flex-direction: column;
     align-items: center;
     background: #103541;
     line-height: 1.16;
-    position: relative;
-    display: flexbox;
+    position: fixed;
 }
 
 section {
@@ -38,9 +37,7 @@ div.centered {
 
 h1 {
     font-size: clamp(2rem, 10vw, 3rem);
-    width: 86%;
     margin: 1rem, auto;
-    margin-right: 0;
 }
 
 h1[class="center"] {
@@ -74,7 +71,7 @@ li::marker {
 
 .horizontal {
     writing-mode: horizontal-tb;
-    width: 92vi; /* Same as 10vw */
+    width: 100%; /* Same as 10vw */
   }
   
 .vertical {
