@@ -7,20 +7,19 @@ html {
 }
 
 body {
-    width: 96vw;
-    justify-content: center;
+    width: 96%;
+    flex-direction: column;
     align-items: center;
-	margin-left:auto;
-    margin-right:auto;
     background: #103541;
     line-height: 1.16;
-    position: absolute;
-    display: block;
+    position: relative;
+    display: flexbox;
 }
 
 section {
     display: block;
     position: relative;
+    align-items: center;
 }
 
 div {
@@ -39,7 +38,9 @@ div.centered {
 
 h1 {
     font-size: clamp(2rem, 10vw, 3rem);
-    width: 86vw;
+    width: 86%;
+    margin: 1rem, auto;
+    margin-right: 0;
 }
 
 h1[class="center"] {

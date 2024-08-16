@@ -1,15 +1,15 @@
 ---
-import { string, type arrayOutputType } from 'astro/zod';
 
 
 interface Props {
-    btnVarieties: any;
     variety: string;
     classes: any;
     isBordered: any;
     background: string;
     color: string;
+    id: string;
 }
+
 
 const btnVarieties: { [key: string]: string } = {
   default: "btn--default",
@@ -17,6 +17,7 @@ const btnVarieties: { [key: string]: string } = {
 };
 
 const {
+  id,
   classes,
   variety = "default",
   isBordered,
