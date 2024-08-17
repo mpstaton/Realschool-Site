@@ -1,40 +1,3 @@
-
-
-html {
-    font-family: Inter, sans-serif;
-    color: antiquewhite;
-    
-}
-
-body {
-    width: 96%; 
-    flex-direction: column;
-    align-items: center;
-    background: #103541;
-    line-height: 1.16;
-    position: fixed;
-}
-
-section {
-    display: block;
-    position: relative;
-    align-items: center;
-}
-
-div {
-    display: block;
-    position: relative;
-}
-
-div.centered {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    block-size: 80%;
-    position:fixed;
-
-}
-
 h1 {
     font-size: clamp(2rem, 10vw, 3rem);
     margin: 1rem, auto;
@@ -43,9 +6,6 @@ h1 {
 h1[class="center"] {
     text-align: center;
 }
-
-
-
 
 ul {
 	margin: 0rem;

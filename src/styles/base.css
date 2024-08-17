@@ -1,0 +1,33 @@
+html {
+    font-family: Inter, sans-serif;
+    color: antiquewhite;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    width: 100%; 
+    flex-direction: column;
+    align-items: center;
+    background: #103541;
+    line-height: 1.16;
+    position: relative;
+}
+
+section {
+    display: flex;
+    position:relative;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+div {
+    display: block;
+    position: relative;
+
+    & .row {
+        display:flex
+    }
+}

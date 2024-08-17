@@ -1,0 +1,41 @@
+
+div.centered {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    position:relative;
+
+}
+
+
+.view--row--base {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.view--row {
+    width: 20rem;
+    height: 12rem;
+    margin: none;
+    background: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow-x: scroll;
+    scroll-snap-align: x mandatory;
+
+    > .block {
+        display: flex;
+        min-width: 20rem;
+        height: 86%;
+        border: 2px, solid, green; 
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        color: black;
+        font-size: xx-large;
+    }
+}

@@ -3,19 +3,24 @@
 import Container from "../components/Container.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Blocks from '../components/dev/Blocks.astro';
+import Header from '../components/Header.astro';
+import Row from '../components/dev/Row.astro';
 import Button from '../components/dev/Button.astro';
 //import { isLabeledStatement } from "typescript";
+//import { HTMLAttributes } from "astro/types";
 
 
 ---
 
 <BaseLayout title="A Future Landing Page">
-	<div>
-		<h1>I like staying with you, we are good together</h1>
-		<p class="horizontal">Which direction will this go?</p>
-	</div>
+	<Header>
+			I like staying with you, we are good together
+	</Header>
+	<p class="horizontal">Which direction will this go?</p>
 
 	<Container />
+
+	<Row />
 
 	<Blocks />
 
