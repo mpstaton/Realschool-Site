@@ -8,24 +8,24 @@ div.centered {
 }
 
 
-.view--row--base {
+.row__base {
     width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.view--row {
+.row__view {
     width: 20rem;
     height: 12rem;
     margin: none;
     background: white;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    align-content: center;
+    align-content: flex-start;
     overflow-x: scroll;
-    scroll-snap-align: x mandatory;
+    scroll-snap-type: x proximity;
 
     > .block {
         display: flex;
@@ -37,5 +37,6 @@ div.centered {
         align-items: center;
         color: black;
         font-size: xx-large;
+        scroll-snap-align: center;
     }
 }
