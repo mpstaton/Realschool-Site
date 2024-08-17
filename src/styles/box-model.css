@@ -10,6 +10,7 @@ div.centered {
 
 .row__base {
     width: 100%;
+    color:aquamarine;
     display: flex;
     align-items: center;
     flex-wrap: wrap;

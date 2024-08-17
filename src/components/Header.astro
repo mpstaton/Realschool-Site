@@ -2,8 +2,17 @@
 
 import '../styles/global.css';
 
+const foregroundColor = "rgb(221 243 228)";
+const backgroundColor = "rgb(24 121 78)";
 ---
 
 <h1>
     <slot />
 </h1>
+
+<style define:vars={{ foregroundColor, backgroundColor }}>
+    h1 {
+      background-color: var(--backgroundColor);
+      color: var(--foregroundColor);
+    }
+  </style>
