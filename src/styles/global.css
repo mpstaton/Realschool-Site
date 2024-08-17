@@ -40,6 +40,7 @@ li::marker {
 }
 
 
+
 @keyframes appear { 
     from {
         opacity: 0;
@@ -57,6 +58,7 @@ li::marker {
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
+
 
 
 
