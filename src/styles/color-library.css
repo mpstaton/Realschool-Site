@@ -5,11 +5,19 @@
     color: hsl(203, 49%, 64%);
 };
 
-
---danube-gloss {
-    background-image: linear-gradient(
-        to right bottom,
-        hsla(203, 49%, 64%, 0.3),
-        hsla(203, 50%, 46%, 0.3)
-    )
+--mine-shaft--light {
+    color: #353535;
 };
+
+--mine-shaft {
+    color: #1D1D1B;
+}
+
+--tundora {
+    color: #4A4A4A;
+};
+
+--jelly-bean {
+    color: #25809F
+}
+

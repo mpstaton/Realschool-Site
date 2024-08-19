@@ -1,0 +1,12 @@
+@import "color-library.css";
+@import "gradient-library.css";
+
+
+div > .content-box {
+    background-color: var(--danube);
+    & .w-gradient {
+        background-color: var(--danube-gloss);
+    } 
+}
+
+
