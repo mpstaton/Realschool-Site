@@ -1,0 +1,9 @@
+
+
+--danube-gloss {
+    background-image: linear-gradient(
+        to right bottom,
+        hsla(203, 49%, 64%, 0.3),
+        hsla(203, 50%, 46%, 0.3)
+    )
+};
