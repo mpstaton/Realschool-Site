@@ -1,0 +1,35 @@
+h2 {
+    margin: 12px 0;
+}
+
+.grid-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    padding: min(50px, 7%);
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    justify-content: center;
+}
+
+.card-4-grid {
+    padding: 1.2em;
+    margin: .5em;
+    border: 2px solid rgb(75, 82, 92);
+    border-radius: 10px;
+    background-color: hsl(223, 9%, 15%);
+    text-align: center;
+    .card-4-grid::after{
+        content: '';
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: -1;
+        padding: 3px;
+        background-color: blueviolet;
+    };
+}
